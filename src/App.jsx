@@ -1,16 +1,26 @@
+import {
+  Hero,
+  CustomerReviews,
+  Footer,
+  PopularProducts,
+  Services,
+  SpecialOffers,
+  Subscribe,
+  SuperQuality
+} from "./sections"
 const App = () => (
   <main className="relative">
-    Nav
+    {/* Nav */}
     <section className="xl:padding-1 wide:padding-r padding-b">
-      Hero
+    <Hero />
     </section>
-    <section className="padding">Popular Products</section>
-    <section className="padding">Super Quality</section>
-    <section className="padding-x py-10">Services</section>
-    <section className="padding">Special Offer</section>
-    <section className="padding bg-pale-blue">Customer Reviews</section>
-    <section className="padding sm:py-32 py-16 w-full">Subscribe</section>
-    <section className="padding bg-black padding-x padding-t pb-8">Footer</section>
+    <section className="padding"><PopularProducts /></section>
+    <section className="padding"><SuperQuality /></section>
+    <section className="padding-x py-10"><Services /></section>
+    <section className="padding"><SpecialOffers /></section>
+    <section className="padding bg-pale-blue"><CustomerReviews /></section>
+    <section className="padding sm:py-32 py-16 w-full"><Subscribe /></section>
+    <section className="padding bg-black padding-x padding-t pb-8"><Footer /></section>
   </main>
 );
 
